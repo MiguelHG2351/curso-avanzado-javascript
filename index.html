@@ -19,30 +19,10 @@
         <button id="btn">
             Play / Pause
         </button>
+        <button id="toggleMute">
+            mute / Umute
+        </button>
     </main>
-    <script>
-        const video = document.getElementById('video')
-        const btn = document.getElementById('btn')
-
-        // Referencia: https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement
-
-        function MediaPlayer(config) {
-            this.media = config.el
-        }
-
-        MediaPlayer.prototype.play = function () {
-            if(!this.media.paused) {
-                this.media.pause()
-            }
-            else {
-                this.media.play()
-            }
-        }
-
-        const player = new MediaPlayer({el: video})    
-
-        btn.onclick = () => player.play()
-
-    </script>
+    <script type="module" src="plugins/index.js"></script>
 </body>
 </html>

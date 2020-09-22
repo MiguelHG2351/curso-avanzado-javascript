@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <button class="call-to-action">Call</button>
+    <button class="call-to-action">To</button>
+    <button class="call-to-action">Action</button>
+
+    <script>
+        const btn = document.getElementsByClassName('call-to-action')
+        console.log(btn)
+        // Devuelve un NodeList, por lo que no es del todo un arreglo
+        Array.prototype.forEach.call(btn, buttons => {
+            debugger
+            buttons.onclick = () => alert("Nunca Pares de aprender")
+        })
+
+    </script>
+</body>
+</html>
