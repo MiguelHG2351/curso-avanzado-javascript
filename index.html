@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Avanzado de JavaScript y avanzado</title>
+    <style>
+        video {
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
     <h2>First Commit</h2>
+    <main>
+        <video id="video">
+            <source src="videos/video.mp4">
+        </video>
+        <button id="btn">
+            Play / Pause
+        </button>
+    </main>
+    <script>
+        const video = document.getElementById('video')
+        const btn = document.getElementById('btn')
+
+        // Referencia: https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement
+
+        function MediaPlayer(config) {
+            this.media = config.el
+        }
+
+        MediaPlayer.prototype.play = function () {
+            if(!this.media.paused) {
+                this.media.pause()
+            }
+            else {
+                this.media.play()
+            }
+        }
+
+        const player = new MediaPlayer({el: video})    
+
+        btn.onclick = () => player.play()
+
+    </script>
 </body>
 </html>
