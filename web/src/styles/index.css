@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Global Styles */
+
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobiles styles */
+
+/* Mobiles styles | Header */
+.header-site {
+    background-color: #20232a;
+    padding: 8px;
+    display: flex;
+    height: 75px;
+}
+
+/* Mobiles styles | Header | title */
+.header-title {
+    color: #fff;
+    flex: 0.5;
+    font-size: 14px;
+    display: flex;
+}
+
+.header-title picture h1 {
+    font-size: 12px;
+}
+
+/* Mobiles styles | Header | search */
+.search {
+    color: #fff;
+    flex: 0.5;
+}
+
+.form-search input {
+    display: none;
+}
