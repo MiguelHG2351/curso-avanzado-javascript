@@ -81,3 +81,13 @@
 .btn.btn-search {
     margin: auto 0;
 }
+
+@media screen and (max-width: 350px) { 
+    /* Mobiles styles | Header | title | pictures */
+
+.header-title picture h1 {
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+}
