@@ -85,9 +85,30 @@
 @media screen and (max-width: 350px) { 
     /* Mobiles styles | Header | title | pictures */
 
-.header-title picture h1 {
-    font-size: 16px;
-    margin-left: 12px;
+    .header-title picture h1 {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+    
 }
+
+@media screen and (max-width: 350px) {
+    /* Mobiles styles | Header | title */
+
+    .header-title {
+        flex: 0.75;
+    }
+    
+
+    /* Mobiles styles | Header | title | pictures */
+
+    .header-title picture h1 {
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+    .search {
+        flex: 0.25;
+    }
 
 }
