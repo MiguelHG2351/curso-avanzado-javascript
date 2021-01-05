@@ -47,3 +47,7 @@ Falta organizar el temario xd
 - Full TypeScript
 
 - Patrones de diseño
+
+# Algunas referencias para la carpeta: Course-platzi
+
+[LINK](https://github.com/MineiToshio/CursosPlatzi)

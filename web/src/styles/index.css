@@ -12,6 +12,22 @@
     height: auto;
 }
 
+
+.floating-button {
+    --spacing: 12px;
+    position: fixed;
+    bottom: var(--spacing);
+    right: var(--spacing);
+    background-color: #09f;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
 /* Mobiles styles */
 
 /* Mobiles styles | Header */
@@ -37,11 +53,18 @@
     color: #fff;
     outline: none;
     border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn-menu {
     margin: auto 0;
     display: flex;
+    transition: transform 0.21s ease;
+}
+
+.btn-menu:hover {
+    transform: scale(0.9);
 }
 
 .btn i {
@@ -53,6 +76,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .header-title picture h1 {
