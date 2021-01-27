@@ -38,11 +38,31 @@
             </div>
         </header>
         <section>
-            <h2>XD</h2>
+            <h2>JavaScript y React</h2>
         </section>
 
+        <section class="floating-menu" id="floating-men">
+            <header class="header-floating-menu">
+                <h2>Temario</h2>
+                <button class="btn close" id="close">
+                    X
+                </button>
+            </header>
+        </section>
         <div class="floating-button">
-            <button class="btn"><i class="material-icons">menu</i></button>
+            <button class="btn" id="open-floating-menu"><i class="material-icons">menu</i></button>
         </div>
+        <script>
+            const $floatingMenuBtn = document.getElementById('open-floating-menu')
+            const $floatingMenu = document.getElementById('floating-men')
+            const $close = document.getElementById('close')
+
+            function toggleFloatingMenu() {
+                $floatingMenu.classList.toggle('active')
+            }
+            $floatingMenuBtn.addEventListener('click', toggleFloatingMenu)
+            $close.addEventListener('click', toggleFloatingMenu)
+
+        </script>
     </body>
 </html>
