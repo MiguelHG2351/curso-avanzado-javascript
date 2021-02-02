@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Introducción al desarrollo web | Miguel2351</title>
+                <title>Miguel2351 | Introducción al desarrollo web</title>
 
             </Head>
             <section>

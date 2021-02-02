@@ -166,6 +166,10 @@ const styles = css.global`
         font-display: Arial, Helvetica;
     }
 
+    :root {
+        --spacing: 12px;
+    }
+
     * {
         margin: 0;
         box-sizing: border-box;

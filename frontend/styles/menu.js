@@ -4,7 +4,6 @@ export default css`
 
     /* Mobile styles | floating button */    
     .floating-button {
-        --spacing: 12px;
         position: fixed;
         bottom: var(--spacing);
         right: var(--spacing);
@@ -38,8 +37,6 @@ export default css`
         font-size: 18px;
     }
 
-    /* Mobiles styles | floating Menu | close */
-
     /* Mobiles styles | floating Menu */
 
     .floating-menu {
@@ -58,21 +55,30 @@ export default css`
         display: block;
     }
 
-    /* Mobiles styles | floating Menu */
+    /* Mobiles styles | floating Menu | List Class */
 
-    .floating-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10;
-        background-color: rgba(255, 255, 255, 1);
-        padding: 12px;
-        display: none;
+    .list-class-course {
+        padding: 0;
     }
 
-    .floating-menu.active {
-        display: block;
+    .list-class {
+        list-style: none;
+        list-style-position: inside;
+        border-left: 4px solid #09f;
+        border-radius: 0.25rem;
     }
+
+    .list-class a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px;
+        color: #000;
+        -webkit-tap-highlight-color: none;
+        outline: none;
+    }
+
+    .list-class:nth-child(n+1) {
+        margin-top: 8px;
+    }
+
 `
