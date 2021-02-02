@@ -11,6 +11,7 @@ class MyDocument extends Document {
             <Html lang="es">
                 <Head>
                     <meta name="theme-color" content="#0099ff"/>
+                    <script src="/index.js"></script>
                 </Head>
                 <body>
                     <Main />

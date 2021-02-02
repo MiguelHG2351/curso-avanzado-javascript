@@ -1,12 +1,9 @@
-import css from 'styled-jsx/css'
+import css from "styled-jsx/css";
 
 const styles = css.global`
-    * {
-        margin: 0;
-    }
 
-        /* cyrillic-ext */
-        @font-face {
+    /* cyrillic-ext */
+    @font-face {
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -170,11 +167,38 @@ const styles = css.global`
     }
 
     * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #0c1633;
+    }
+
+    .btn {
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn-menu {
+    margin: auto 0;
+    display: flex;
+    transition: transform 0.21s ease;
 }
 
-`
+    .btn-menu:hover {
+        transform: scale(0.9);
+    }
 
-export default styles
+    .btn i {
+        font-size: 2.2rem;
+    }
+
+`;
+
+export default styles;
