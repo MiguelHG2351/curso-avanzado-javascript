@@ -5,8 +5,6 @@ export default css`
         background-color: #03091e;
         color: #fff;
         padding: 15px;
-        position: relative;
-        z-index: 111;
     }
     
     .social {
@@ -14,13 +12,14 @@ export default css`
         justify-content: space-around;
     }
 
-    .owner h3 {
+    .owner h3, .title-reference h3 {
         text-align: center;
     }
 
-    .social img {
+    .social a img {
         width: 48px;
         cursor: pointer;
+        vertical-align: bottom;
     }
 
     .reference {

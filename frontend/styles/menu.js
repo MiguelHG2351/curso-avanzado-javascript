@@ -4,6 +4,7 @@ export default css`
     /* Mobile styles | floating button */
     .floating-button {
         position: fixed;
+        z-index: 10;
         bottom: var(--spacing);
         right: var(--spacing);
         background-color: #09f;
@@ -40,11 +41,11 @@ export default css`
 
     .floating-menu {
         position: fixed;
+        z-index: 11;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 10;
         background-color: rgba(255, 255, 255, 1);
         padding: 12px;
         display: none;

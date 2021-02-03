@@ -81,6 +81,98 @@ export default css`
         margin: auto 0;
     }
 
+    /* Mobile styles | Header | sidenav */
+    .sidenav {
+        position: fixed;
+        display: none;
+        z-index: 13;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(15px);
+        overflow: hidden;
+        transform: translateX(100%);
+        transition: transform ease 0.3s;
+    }
+
+    .sidenav.active {
+        display: block;
+        transform: translateX(0);
+    }
+
+    /* Mobile styles | Header | sidenav | container */
+    .container {
+        margin: 0;
+        width: 75%;
+        background-color: #333;
+        height: -webkit-fill-available;
+        padding: 12px;
+    }
+
+    /* Mobile styles | Header | sidenav | header */
+    .header-sidenav {
+        display: flex;
+    }
+
+    /* Mobile styles | Header | sidenav | header | picture | img */
+    .header-sidenav picture {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Mobile styles | Header | sidenav | header | a */
+    .header-sidenav a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+    }
+
+    /* Mobile styles | Header | sidenav | container | ul */
+    .container ul {
+        margin: 0;
+        padding-left: 0;
+        border-top: 1px solid gray;
+    }
+
+    /* Mobile styles | Header | sidenav | container | ul | li */
+    .container ul li {
+        list-style: none;
+    }
+
+    .container ul li {
+        margin-top: 16px;
+    }
+
+    /* Mobile styles | Header | sidenav | container | ul | li | a */
+    .container ul li a {
+        text-decoration: none;
+        padding: 4px;
+        color: #eee;
+        display: inline-block;
+        width: -webkit-fill-available;
+
+    }
+
+    /* Mobile styles | Header | overlay */
+
+    .overlay {
+        position: fixed;
+        display: none;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 75%;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 13;
+        overflow: auto;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+
     @media screen and (max-width: 350px) { 
         /* Mobiles styles | Header | title | pictures */
 
