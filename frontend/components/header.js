@@ -13,7 +13,7 @@ export default function Header() {
                             src="/images/header_logo.svg"
                             alt="Logo de React Native"
                         />
-                        <h1>JavaScript React</h1>
+                        <h2>JavaScript React</h2>
                     </picture>
                 </div>
                 <div className="search">

@@ -68,17 +68,17 @@ export default css`
         border-radius: 0.25rem;
     }
 
-    .list-class a {
+    .list-class:nth-child(n+2) {
+        margin-top: 22px;
+    }
+
+    .list-class > a {
         text-decoration: none;
         display: inline-block;
         padding: 8px;
         color: #000;
         -webkit-tap-highlight-color: none;
         outline: none;
-    }
-
-    .list-class:nth-child(n+1) {
-        margin-top: 8px;
     }
 
 `

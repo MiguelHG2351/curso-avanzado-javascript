@@ -54,7 +54,7 @@ export default css`
         cursor: pointer;
     }
 
-    .header-title picture h1 {
+    .header-title picture h2 {
         font-size: 18px;
         margin-left: 12px;
     }
