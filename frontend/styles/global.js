@@ -171,13 +171,13 @@ const styles = css.global`
     }
 
     * {
-        margin: 0;
         box-sizing: border-box;
         font-family: "Roboto", Arial, Helvetica, sans-serif;
     }
 
     body {
         background-color: #0c1633;
+        margin: 0;
     }
 
     .btn {

@@ -1,8 +1,7 @@
-import css from 'styled-jsx/css'
+import css from "styled-jsx/css";
 
 export default css`
-
-    /* Mobile styles | floating button */    
+    /* Mobile styles | floating button */
     .floating-button {
         position: fixed;
         bottom: var(--spacing);
@@ -64,21 +63,31 @@ export default css`
     .list-class {
         list-style: none;
         list-style-position: inside;
-        border-left: 4px solid #09f;
-        border-radius: 0.25rem;
+        /* border-left: 4px solid #09f;
+        border-radius: 0.25rem; */
     }
 
-    .list-class:nth-child(n+2) {
+    /* .list-class.active */
+
+    .list-class:nth-child(n + 2) {
         margin-top: 22px;
     }
+`;
 
-    .list-class > a {
+export const linkStyle = css`
+    a {
         text-decoration: none;
         display: inline-block;
         padding: 8px;
         color: #000;
-        -webkit-tap-highlight-color: none;
+        -webkit-tap-highlight-color: transparent;
         outline: none;
+        width: -webkit-fill-available;
     }
 
-`
+    a.active {
+        border-left: 4px solid #09f;
+        border-radius: 0.25rem;
+    }
+
+`;

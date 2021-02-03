@@ -22,7 +22,7 @@ export default function Home() {
                         HTML, CSS y JavaScript que enseña no enseña solo las
                         etiquetas, estilos o las API's bássicas sino también las herramientas que pocos sitios enseñan como:
                     </p>
-                    <ul>
+                    <ul className="some-theme">
                         <li>Accesibilidad web</li>
                         <li>Performance</li>
                         <li>Dev Tools de Chrome y Firefox</li>

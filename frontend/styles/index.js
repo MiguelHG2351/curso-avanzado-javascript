@@ -13,7 +13,15 @@ export default css`
 
 .content img {
     width: 250px;
+}
 
+.some-theme li {
+    list-style-type: "✔";
+    list-style-position: outside;
+}
+
+.some-theme li + li {
+    margin-top: 12px;
 }
     
 `;
