@@ -85,7 +85,7 @@ export default css`
     /* Mobile styles | Header | sidenav */
     .sidenav {
         position: fixed;
-        display: none;
+        width: 0;
         z-index: 13;
         top: 0;
         left: 0;
@@ -93,13 +93,15 @@ export default css`
         bottom: 0;
         backdrop-filter: blur(15px);
         overflow: hidden;
-        transform: translateX(100%);
-        transition: transform ease 0.3s;
+        transform: translateX(-100%);
+        transition: transform ease 0.45s, width ease 0.45s;
     }
 
     .sidenav.active {
         display: block;
+        width: 100%;
         transform: translateX(0);
+        transition: transform ease 0.45s;
     }
 
     /* Mobile styles | Header | sidenav | container */

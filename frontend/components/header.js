@@ -48,7 +48,7 @@ export default function Header() {
                     <div className="container">
                         <div className="header-sidenav">
                             <Link href="/">
-                                <a>
+                                <a onClick={toggleMenu}>
                                     <picture>
                                         <img src="/images/header_logo.svg" alt="React LOGO" width="45px"/>
                                     </picture>
