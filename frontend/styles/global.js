@@ -217,6 +217,10 @@ const styles = css.global`
         font-family: "Roboto";
     }
 
+    .xd {
+        transition: all ease 0.3s;
+    }
+
     a {
         text-decoration: none;
     }

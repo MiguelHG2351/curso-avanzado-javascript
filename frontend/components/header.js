@@ -36,14 +36,6 @@ export default function Header() {
                         </a>
                     </Link>
                 </div>
-                <div className="search">
-                    <form className="form-search">
-                        <input type="text" placeholder="CTR+K" />
-                    </form>
-                    <button className="btn btn-search">
-                        <i className="material-icons">search</i>
-                    </button>
-                </div>
                 <div className="sidenav" ref={sidenavRef}>
                     <div className="container">
                         <div className="header-sidenav">
@@ -56,7 +48,7 @@ export default function Header() {
                                 </a>
                             </Link>
                         </div>
-                        <ul>
+                        <ul className="list-overlay">
                             <li onClick={toggleMenu}>
                                 <Link href="/docs">
                                     <a>Docs</a>
@@ -87,6 +79,14 @@ export default function Header() {
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div className="search">
+                    <form className="form-search">
+                        <input type="text" placeholder="CTR+K" />
+                    </form>
+                    <button className="btn btn-search">
+                        <i className="material-icons">search</i>
+                    </button>
                 </div>
                 <div className="overlay" ref={overlayRef} onClick={toggleMenu}></div>
             </header>

@@ -1,15 +1,14 @@
-import css from 'styled-jsx/css'
+import css from "styled-jsx/css";
 
 export default css`
-    
+    /* Mobiles styles */
 
-/* Mobiles styles */
-
-/* Mobiles styles | Header */
-.header-site {
+    /* Mobiles styles | Header */
+    .header-site {
         background-color: #20232a;
         padding: 8px;
         display: flex;
+        align-items: center;
         height: 63.75px;
     }
 
@@ -53,7 +52,7 @@ export default css`
         flex-wrap: wrap;
         cursor: pointer;
     }
-    
+
     .header-title picture h2 {
         font-size: 18px;
         margin-left: 12px;
@@ -131,30 +130,29 @@ export default css`
     }
 
     /* Mobile styles | Header | sidenav | container | ul */
-    .container ul {
+    .list-overlay {
         margin: 0;
         padding-left: 0;
         border-top: 1px solid gray;
     }
 
     /* Mobile styles | Header | sidenav | container | ul | li */
-    .container ul li {
+    .list-overlay li {
         list-style: none;
         margin-top: 8px;
         transition: background ease 0.18s;
     }
 
-    .container ul li:hover {
+    .list-overlay li:hover {
         background-color: #09f;
     }
 
     /* Mobile styles | Header | sidenav | container | ul | li | a */
-    .container ul li a {
+    .list-overlay li a {
         padding: 8px;
         color: #eee;
         display: inline-block;
         width: -webkit-fill-available;
-
     }
 
     /* Mobile styles | Header | overlay */
@@ -176,14 +174,13 @@ export default css`
         display: block;
     }
 
-    @media screen and (max-width: 350px) { 
+    @media screen and (max-width: 350px) {
         /* Mobiles styles | Header | title | pictures */
 
         .header-title picture h1 {
             font-size: 16px;
             margin-left: 12px;
         }
-        
     }
 
     @media screen and (max-width: 350px) {
@@ -192,7 +189,6 @@ export default css`
         .header-title {
             flex: 0.75;
         }
-        
 
         /* Mobiles styles | Header | title | pictures */
 
@@ -204,7 +200,61 @@ export default css`
         .search {
             flex: 0.25;
         }
-
     }
 
-`
+    /* Desktop styles */
+
+    @media screen and (min-width: 1024px) {
+        /* Desktop styles | Header | title | Buttons */
+        .btn-menu {
+            display: none;
+        }
+
+        /* Desktop styles | Header | title */
+        .header-title {
+            flex: 0.3;
+        }
+
+        /* Desktop styles | Header | search */
+        .search {
+            flex: 0.2;
+        }
+
+        /* Desktop styles | Header | sidenav */
+        .sidenav {
+            position: static;
+            width: auto;
+            backdrop-filter: none;
+            transform: translateX(0);
+            transition: none;
+            flex: 0.5;
+        }
+
+        /* Desktop styles | Header | sidenav | container */
+        .sidenav .container {
+            background-color: transparent;
+            width: -webkit-fill-available;
+        }
+
+        /* Desktop styles | Header | sidenav | header */
+        .header-sidenav {
+            display: none;
+        }
+
+        /* Desktop styles | Header | sidenav | List */
+        .list-overlay {
+            display: flex;
+            border-top: none;
+        }
+
+        /* Desktop styles | Header | sidenav | List | li */
+        .list-overlay li {
+            margin-top: 0;
+        }
+
+        /* Desktop styles | Header | sidenav | List | li | a */
+        .list-overlay li a {
+            padding: 15px;
+        }
+    }
+`;

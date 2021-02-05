@@ -15,7 +15,7 @@ export default css`
     width: 250px;
 }
 
-.theme-intro > *, .some-theme > *, .theme > * {
+.theme-summary > *, .some-theme > *, .theme > * {
     font-family: "Be Vietnam";
 }
 
@@ -76,8 +76,16 @@ export default css`
         grid-area: image;
     }
 
-    .theme-intro {
+    .theme-summary {
         grid-area: text;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .themes {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
     }
 }
     
