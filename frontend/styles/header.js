@@ -53,10 +53,11 @@ export default css`
         flex-wrap: wrap;
         cursor: pointer;
     }
-
+    
     .header-title picture h2 {
         font-size: 18px;
         margin-left: 12px;
+        color: #fff;
     }
 
     .header-title picture img {
@@ -123,7 +124,6 @@ export default css`
 
     /* Mobile styles | Header | sidenav | header | a */
     .header-sidenav a {
-        text-decoration: none;
         color: #fff;
         display: flex;
     }
@@ -138,16 +138,17 @@ export default css`
     /* Mobile styles | Header | sidenav | container | ul | li */
     .container ul li {
         list-style: none;
+        margin-top: 8px;
+        transition: background ease 0.18s;
     }
 
-    .container ul li {
-        margin-top: 16px;
+    .container ul li:hover {
+        background-color: #09f;
     }
 
     /* Mobile styles | Header | sidenav | container | ul | li | a */
     .container ul li a {
-        text-decoration: none;
-        padding: 4px;
+        padding: 8px;
         color: #eee;
         display: inline-block;
         width: -webkit-fill-available;

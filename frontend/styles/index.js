@@ -15,6 +15,10 @@ export default css`
     width: 250px;
 }
 
+.theme-intro > *, .some-theme > *, .theme > * {
+    font-family: "Be Vietnam";
+}
+
 .some-theme li {
     list-style-type: "✔";
     list-style-position: outside;

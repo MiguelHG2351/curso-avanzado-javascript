@@ -24,13 +24,17 @@ export default function Header() {
                     <button className="btn btn-menu" onClick={toggleMenu}>
                         <i className="material-icons">menu</i>
                     </button>
-                    <picture>
-                        <img
-                            src="/images/header_logo.svg"
-                            alt="Logo de React Native"
-                        />
-                        <h2>JavaScript React</h2>
-                    </picture>
+                    <Link href="/">
+                        <a>
+                            <picture>
+                                <img
+                                    src="/images/header_logo.svg"
+                                    alt="Logo de React Native"
+                                />
+                                <h2>JavaScript React</h2>
+                            </picture>
+                        </a>
+                    </Link>
                 </div>
                 <div className="search">
                     <form className="form-search">

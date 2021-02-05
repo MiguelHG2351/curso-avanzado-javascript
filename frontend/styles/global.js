@@ -2,6 +2,8 @@ import css from "styled-jsx/css";
 
 const styles = css.global`
 
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
+
     /* cyrillic-ext */
     @font-face {
         font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -172,7 +174,14 @@ const styles = css.global`
 
     * {
         box-sizing: border-box;
-        font-family: "Roboto", Arial, Helvetica, sans-serif;
+    }
+
+    h1, p, h3, h2, a, li {
+        font-family: "Roboto";
+    }
+
+    a {
+        text-decoration: none;
     }
 
     body {

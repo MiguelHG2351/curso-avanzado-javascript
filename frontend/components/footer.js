@@ -27,11 +27,17 @@ export default function Footer() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Isometric Illustrations
+                        Illustrations
                     </a>
-                    <a href="https://fontawesome.com/">font awesone</a>
-                    <a href="https://material.io/resources/icons/">Material Icons</a>
-
+                    <a href="https://fontawesome.com/">
+                        <img src="/images/font-awesome.webp" width="48px" loading="lazy" alt="font awesome"/>
+                    </a>
+                    <a href="https://material.io/resources/icons/">
+                        <img src="/images/material-icons.png" width="48px" loading="lazy" alt="material icons"/>
+                    </a>
+                </div>
+                <div className="website-author">
+                    <p>Creado por <a href="https://miguel2351.vercel.app" target="_blank">Miguel Hernández</a> para futuros Devs :)</p>
                 </div>
             </footer>
             <style jsx>{styles}</style>

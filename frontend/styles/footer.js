@@ -25,6 +25,21 @@ export default css`
     .reference {
         margin: 15px 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .reference a:first-child {
+        color: #fff;
+        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .website-author {
+        font-size: 12px;
     }
 `
