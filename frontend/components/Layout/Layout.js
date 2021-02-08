@@ -1,4 +1,4 @@
-import global from 'styles/global'
+import global from './global'
 
 function Layout(props) {
     return (

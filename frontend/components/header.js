@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import Link from "next/link";
-import styles from "styles/header";
+import styles from "./styles/header";
 
 export default function Header() {
     const overlayRef = useRef()

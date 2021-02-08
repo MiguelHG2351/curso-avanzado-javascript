@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { nanoid } from 'nanoid'
 
 //Components
-import Layout from "components/Layout";
+import Layout from "components/Layout/Layout";
 import Header from "components/header";
 import Menu from "components/menu";
 import Footer from "components/footer";

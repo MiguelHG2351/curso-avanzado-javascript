@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef } from "react";
-import styles, { linkStyle } from "styles/menu";
+import styles, { linkStyle } from "./styles/menu";
 
 function OldRoute({ to, text, currentRoute }) {
     return (

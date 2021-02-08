@@ -42,4 +42,30 @@ export default css`
     .website-author {
         font-size: 12px;
     }
+
+    @media screen and (min-width: 1024px) {
+        footer {
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "owner reference social" "social reference social" "end-title end-title end-title";
+        }
+
+        .owner {
+            grid-area: "owner";
+        }
+
+        .social {
+            grid-area: "social";
+        }
+
+        .reference-container {
+            grid-area: "reference";
+        }
+
+        .website-author {
+            grid-area: "website-author";
+        }
+
+    }
 `
