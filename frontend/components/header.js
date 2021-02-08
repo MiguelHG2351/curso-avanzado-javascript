@@ -75,7 +75,7 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <a href="https://github.com/MiguelHG2351/curso-avanzado-javascript">GITHUB</a>
+                                <a target="_blank" href="https://github.com/MiguelHG2351/curso-avanzado-javascript">GITHUB</a>
                             </li>
                         </ul>
                     </div>

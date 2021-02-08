@@ -1,6 +1,12 @@
 import css from "styled-jsx/css";
 
 export default css`
+
+/* Default styles */
+.theme p a {
+    color: #09f;
+}
+
 .content {
     color: #eee;
     width: 90%;
@@ -70,6 +76,15 @@ export default css`
         display: grid;
         grid-template-areas: "text image";
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .theme-intro h3 {
+        font-size: 32px;
+    }
+
+    .theme-intro p {
+        font-size: 16px;
     }
 
     .intro [align] {

@@ -114,7 +114,6 @@ export default function Home() {
                                     <div className="cantidad">3 clases</div>
                                 </div>
                             </div>
-                            <Link href="/docs"><a>XD</a></Link>
                         </article>
                     </section>
                 </motion.div>

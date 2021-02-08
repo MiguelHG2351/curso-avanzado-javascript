@@ -252,6 +252,12 @@ const styles = css.global`
     .btn i {
         font-size: 2.2rem;
     }
+
+    .main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
 `;
 
 export default styles;

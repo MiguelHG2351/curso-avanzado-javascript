@@ -73,6 +73,34 @@ export default css`
     .list-class:nth-child(n + 2) {
         margin-top: 22px;
     }
+
+    @media screen and (min-width: 1020px) {
+        /* Desktop styles | floating button */
+        .floating-button {
+            display: none;
+        }
+        
+        /* Desktop styles | floating menu */
+        .floating-menu {
+            display: block;
+            position: sticky;
+            top: 0px;
+        }
+
+        .container-floating-menu {
+            position: sticky;
+            top: 0;
+            bottom: 0;
+            overflow-y: auto;
+        }
+
+        /* Desktop styles | floating Menu | Header | close */
+        .close {
+            display: none;
+        }
+
+    }
+
 `;
 
 export const linkStyle = css`

@@ -30,8 +30,10 @@ class MyApp extends App {
                 <AnimatePresence exitBeforeEnter>
                     <Layout>
                         <Header />
-                        <Menu />
-                        <Component {...pageProps} key={nanoid()} />
+                        <div className="main">
+                            <Menu />
+                            <Component {...pageProps} key={nanoid()} />
+                        </div>
                         <ScrollUp />
                         <Footer />
                     </Layout>
