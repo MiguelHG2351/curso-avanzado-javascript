@@ -27,6 +27,11 @@ export default css`
         align-items: center;
     }
 
+    /* Mobiles styles | floating Menu | Header | h2 */
+    .header-floating-menu h2 {
+        cursor: pointer;
+    }
+
     /* Mobiles styles | floating Menu | Header | close */
     .close {
         height: 48px;

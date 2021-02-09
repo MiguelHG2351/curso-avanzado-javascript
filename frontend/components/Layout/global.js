@@ -262,7 +262,13 @@ const styles = css.global`
         color: #eee;
         width: 90%;
         margin: 15px auto;
-}
+    }
+
+    @media screen and (min-width: 1400px) {
+        .content {
+            width: 80%;
+        }
+    }
 
 `;
 

@@ -29,6 +29,13 @@ export default function Home() {
                                     para comprender las herramientas de
                                     desarrollo web
                                 </p>
+                                <button className="btn get-started">
+                                    <Link href="/docs">
+                                        <a>
+                                            Get Started
+                                        </a>
+                                    </Link>
+                                </button>
                             </div>
                         </div>
                         <article className="theme-summary">

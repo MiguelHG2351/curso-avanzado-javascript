@@ -74,11 +74,29 @@ export default css`
     }
 
     .theme-intro h3 {
-        font-size: 32px;
+        font-size: 36px;
     }
 
     .theme-intro p {
         font-size: 16px;
+        color: #ddd;
+    }
+
+    .get-started {
+        padding: 0;
+        transition: transform ease 0.18s;
+    }
+
+    .get-started a {
+        display: inline-block;
+        padding: 12px 22px;
+        background-color: #09f;
+        color: #eee;
+        border-radius: 12px;
+    }
+
+    .get-started:hover {
+        transform: scale(0.9);
     }
 
     .intro [align] {

@@ -1,4 +1,5 @@
 import styles from "./styles/footer";
+import Image from 'next/image'
 
 export default function Footer() {
     return (
@@ -31,10 +32,10 @@ export default function Footer() {
                             Illustrations
                         </a>
                         <a href="https://fontawesome.com/">
-                            <img src="/images/font-awesome.webp" width="48px" loading="lazy" alt="font awesome"/>
+                            <Image src="/images/font-awesome.webp" width={48} height={48} alt="font awesome"/>
                         </a>
                         <a href="https://material.io/resources/icons/">
-                            <img src="/images/material-icons.png" width="48px" loading="lazy" alt="material icons"/>
+                            <Image src="/images/material-icons.png" width={48} height={48} alt="material icons"/>
                         </a>
                     </div>
                 </div>
