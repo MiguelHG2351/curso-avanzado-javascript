@@ -258,6 +258,12 @@ const styles = css.global`
         grid-template-columns: 30% 70%;
     }
 
+    .content {
+        color: #eee;
+        width: 90%;
+        margin: 15px auto;
+}
+
 `;
 
 export default styles;

@@ -7,12 +7,6 @@ export default css`
     color: #09f;
 }
 
-.content {
-    color: #eee;
-    width: 90%;
-    margin: 15px auto;
-}
-
 .content h1 {
     text-align: center;
 }

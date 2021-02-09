@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { motion } from 'framer-motion'
+import styles from 'styles/terminal'
 
 export default function Terminal() {
     return (
@@ -6,7 +8,7 @@ export default function Terminal() {
             <Head>
                 <title>Introducción a la terminal y Línea de Comandos</title>
             </Head>
-            <section>
+            <motion.section exit={{opacity: 0}} className="content">
                 <h1>Introducción a la terminal y la Línea de comandos</h1>
                 <article>
                     <h2>Comandos para trabajar desde nuestra ubicación</h2>
@@ -25,7 +27,10 @@ export default function Terminal() {
                     <p>cd /home/user</p>
                     
                 </article>
-            </section>
+            </motion.section>
+            <style jsx>
+                { styles }
+            </style>
         </>
     );
 }

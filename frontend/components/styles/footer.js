@@ -49,6 +49,7 @@ export default css`
             grid-template-columns: 25% 50% 25%;
             grid-template-rows: repeat(2, 1fr);
             grid-template-areas: "owner reference social" "social reference social" "end-title end-title end-title";
+            align-items: center;
         }
 
         .owner {
