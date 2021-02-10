@@ -45,7 +45,7 @@ export default function Home() {
                                 tecnologías como: HTML, CSS y JavaScript que
                                 enseña no solo las etiquetas, estilos o las
                                 API's básicas sino también las herramientas que
-                                son poco conocidas pero realmente útil:
+                                son realmente útil en el desarrollo web:
                             </p>
                             <ul className="some-theme">
                                 <li>Accesibilidad web</li>
@@ -53,12 +53,20 @@ export default function Home() {
                                 <li>Dev Tools de Chrome y Firefox</li>
                                 <li>Manejo de errores HTML</li>
                                 <li>
-                                    El DOM no es lo que se mira en las Dev Tools
-                                    o un mapa 1-1 de los elementos HTML
+                                    Que es el DOM exactamente?
                                 </li>
                                 <li>
                                     Patrones de diseño: Observer, Prototype,
                                     Singleton, etc
+                                </li>
+                                <li>
+                                    Hoisting y el Event Loop
+                                </li>
+                                <li>
+                                    POO en JavaScript, Añadiendo tipado con TypeScript
+                                </li>
+                                <li>
+                                    Promesas, asincronismo y performance.
                                 </li>
                                 <li>
                                     API como: Navigator, Uso Fetch en
@@ -68,6 +76,7 @@ export default function Home() {
                                     Como elegir las herramientas correctas para
                                     crear una aplicación o página web
                                 </li>
+                                <li>etc v:</li>
                             </ul>
                         </article>
                         <article className="theme">

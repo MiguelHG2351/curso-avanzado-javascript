@@ -1,5 +1,6 @@
 import styles from "./styles/footer";
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
     return (
@@ -38,6 +39,41 @@ export default function Footer() {
                             <Image src="/images/material-icons.png" width={48} height={48} alt="material icons"/>
                         </a>
                     </div>
+                </div>
+                <div className="menu-footer-container">
+                    <div className="title-menu-footer">
+                        <h3>Tecnologías</h3>
+                    </div>
+                    <ul className="menu-footer">
+                        <li>
+                            <Link href="/html">
+                                <a>
+                                    HTML
+                                </a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/css">
+                                <a>
+                                    CSS
+                                </a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/js">
+                                <a>
+                                    JavaScript
+                                </a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/nodejs">
+                                <a>
+                                    NodeJS
+                                </a>
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
                 <div className="website-author">
                     <p>Creado por <a href="https://miguel2351.vercel.app" target="_blank">Miguel Hernández</a> para futuros Devs :)</p>

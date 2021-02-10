@@ -12,7 +12,7 @@ export default css`
         justify-content: space-around;
     }
 
-    .owner h3, .title-reference h3 {
+    .owner h3, .title-reference h3, .title-menu-footer h3 {
         text-align: center;
     }
 
@@ -39,33 +39,59 @@ export default css`
         font-size: 22px;
     }
 
+    .menu-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 22px;
+        padding-left: 0;
+    }
+
+    .menu-footer li {
+        list-style: none;
+        text-align: center;
+    }
+    
+    .menu-footer li a {
+        color: #09f;
+    }
+
     .website-author {
         font-size: 12px;
+        text-align: center;
+        margin-top: 52px;
+    }
+
+    .website-author p {
+        margin-bottom: 0;
     }
 
     @media screen and (min-width: 1024px) {
         footer {
             display: grid;
             grid-template-columns: 25% 50% 25%;
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-areas: "owner reference social" "social reference social" "end-title end-title end-title";
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "owner menu reference" "social menu reference" "end-title end-title end-title";
             align-items: center;
         }
 
         .owner {
-            grid-area: "owner";
+            grid-area: owner;
         }
 
         .social {
-            grid-area: "social";
+            grid-area: social;
         }
 
         .reference-container {
-            grid-area: "reference";
+            grid-area: reference;
+        }
+
+        .menu-footer-container {
+            grid-area: menu;
         }
 
         .website-author {
-            grid-area: "website-author";
+            grid-area: end-title;
         }
 
     }

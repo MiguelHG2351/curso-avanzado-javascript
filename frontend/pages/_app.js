@@ -1,7 +1,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { AnimatePresence } from "framer-motion";
-import { nanoid } from "nanoid";
 import Router, { useRouter } from "next/router";
 import NProgress from "nprogress";
 
@@ -45,7 +44,7 @@ function MyApp(props) {
                 <div className={router.route !== "/" ? "main" : null}>
                     {router.route !== "/" && <Menu />}
                     <AnimatePresence exitBeforeEnter initial={false}>
-                        <Component {...pageProps} key={nanoid()} />
+                        <Component {...pageProps} key={router.route} />
                     </AnimatePresence>
                 </div>
                 <ScrollUp />

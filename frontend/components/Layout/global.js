@@ -270,6 +270,14 @@ const styles = css.global`
         }
     }
 
+    @media screen and (min-width: 1190px) {
+        .main {
+            max-width: 1190px;
+            margin: 0 auto;
+        }
+
+    }
+
 `;
 
 export default styles;

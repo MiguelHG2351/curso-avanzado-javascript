@@ -90,6 +90,9 @@ export default css`
             display: block;
             position: sticky;
             top: 0px;
+            background-color: #0c1633;
+            color: #fff;
+            border-right: 1px solid gray;
         }
 
         .container-floating-menu {
@@ -103,7 +106,6 @@ export default css`
         .close {
             display: none;
         }
-
     }
 
 `;
@@ -122,6 +124,12 @@ export const linkStyle = css`
     a.active {
         border-left: 4px solid #09f;
         border-radius: 0.25rem;
+    }
+
+    @media screen and (min-width: 1020px) {
+        a {
+            color: #eee;
+        }
     }
 
 `;
