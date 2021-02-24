@@ -211,6 +211,7 @@ export default css`
     /* Desktop styles */
 
     @media screen and (min-width: 1024px) {
+
         /* Desktop styles | Header | title | Buttons */
         .btn-menu {
             display: none;
@@ -262,6 +263,14 @@ export default css`
         /* Desktop styles | Header | sidenav | List | li | a */
         .list-overlay li a {
             padding: 15px;
+        }
+    }
+
+    @media screen and (min-width: 1260px) {
+        /* Desktop styles | Header */
+        .header-site {
+            width: 1260px;
+            margin: 0 auto;
         }
     }
 `;

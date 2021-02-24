@@ -6,8 +6,9 @@ const styles = css.global`
     }
 
     :root {
-        --font-primary: "Rubik", sans-serif;
-        --font-secondary: "Montserrat", sans-serif;
+        --font-secondary: "Rubik", sans-serif;
+        --font-primary: "Montserrat", sans-serif;
+        --secondary-background: #060b18;
     }
 
     /* Rubik Font */
@@ -290,6 +291,10 @@ const styles = css.global`
         font-family: var(--font-primary);
     }
 
+    p {
+        line-height: 1.75em;
+    }
+
     .xd {
         transition: all ease 0.3s;
     }
@@ -299,7 +304,7 @@ const styles = css.global`
     }
 
     body {
-        background-color: #0c1633;
+        background-color: var(--secondary-background);
         margin: 0;
     }
 
@@ -332,13 +337,11 @@ const styles = css.global`
         margin: 15px auto;
     }
 
-    @media screen and (min-width: 1400px) {
-        .content {
-            width: 80%;
-        }
-    }
 
-    @media screen and (min-width: 1190px) {
+    @media screen and (min-width: 1260px) {
+        .content {
+            width: 1260px;
+        }
         .main {
             max-width: 1190px;
             margin: 0 auto;

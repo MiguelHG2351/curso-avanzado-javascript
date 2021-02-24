@@ -28,7 +28,7 @@ export default function Header() {
                                     src="/images/header_logo.svg"
                                     alt="Logo de React Native"
                                 />
-                                <h2>JavaScript React</h2>
+                                <h2>Miguel2351 Blog</h2>
                             </picture>
                         </a>
                     </Link>
@@ -57,7 +57,7 @@ export default function Header() {
                             </li>
                             <li onClick={toggleMenu}>
                                 <Link href="/components">
-                                    <a>Components</a>
+                                    <a>Feedback</a>
                                 </Link>
                             </li>
                             <li onClick={toggleMenu}>
@@ -81,6 +81,7 @@ export default function Header() {
                                     href="https://github.com/MiguelHG2351/curso-avanzado-javascript"
                                 >
                                     GITHUB
+                                    <i><img width="18px" style={{verticalAlign: 'text-bottom', marginLeft: '12px'}} src="/icons/github-brands.svg" alt="icono de github"/></i>
                                 </a>
                             </li>
                         </ul>

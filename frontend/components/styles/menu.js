@@ -103,7 +103,7 @@ export default css`
             display: block;
             position: sticky;
             top: 0px;
-            background-color: #0c1633;
+            background-color: var(--secondary-background);
             color: #fff;
             border-right: 1px solid gray;
         }

@@ -53,6 +53,7 @@ export default css`
     
     .menu-footer li a {
         color: #09f;
+        font-weight: 700;
     }
 
     .website-author {
@@ -67,19 +68,21 @@ export default css`
 
     @media screen and (min-width: 1024px) {
         footer {
+            height: 500px;
+        }
+        
+        .footer-description {
+            margin: auto;
+            height: 400px;
             display: grid;
             grid-template-columns: 25% 50% 25%;
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-areas: "owner menu reference" "social menu reference" "end-title end-title end-title";
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "principal menu reference" "principal menu reference";
             align-items: center;
         }
 
-        .owner {
-            grid-area: owner;
-        }
-
-        .social {
-            grid-area: social;
+        .principal-info {
+            grid-area: principal;
         }
 
         .reference-container {
@@ -90,8 +93,12 @@ export default css`
             grid-area: menu;
         }
 
+        .principal-info > div + div, .reference-container > div + div, .menu-footer-container ul {
+            margin-top: 80px;
+        }
+
         .website-author {
-            grid-area: end-title;
+            margin-top: 0;
         }
 
     }

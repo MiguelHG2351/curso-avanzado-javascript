@@ -11,12 +11,16 @@ export default css`
     text-align: center;
 }
 
-.content img {
+.hero-image img {
     width: 250px;
 }
 
 .theme-summary > *, .some-theme > *, .theme > * {
     font-family: var(--font-secondary);
+}
+
+.theme-summary h3 {
+    font-size: 26px;
 }
 
 .some-theme li {
@@ -113,6 +117,10 @@ export default css`
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 15px;
         grid-row-gap: 15px;
+    }
+
+    .hero-image img {
+        width: 500px;
     }
 }
     
