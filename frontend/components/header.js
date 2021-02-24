@@ -1,25 +1,22 @@
-import { useRef } from 'react'
+import { useRef } from "react";
 import Link from "next/link";
 import styles from "./styles/header";
 
 export default function Header() {
-    const overlayRef = useRef()
-    const sidenavRef = useRef()
+    const overlayRef = useRef();
+    const sidenavRef = useRef();
 
     function toggleMenu() {
-        const sidenav = sidenavRef.current
-        const overlay = overlayRef.current
+        const sidenav = sidenavRef.current;
+        const overlay = overlayRef.current;
 
-        sidenav.classList.toggle('active')
-        overlay.classList.toggle('active')
+        sidenav.classList.toggle("active");
+        overlay.classList.toggle("active");
     }
 
     return (
         <>
-            <header
-                className="header-site"
-                style={{ position: "sticky", top: 0 }}
-            >
+            <header className="header-site">
                 <div className="header-title">
                     <button className="btn btn-menu" onClick={toggleMenu}>
                         <i className="material-icons">menu</i>
@@ -42,7 +39,11 @@ export default function Header() {
                             <Link href="/">
                                 <a onClick={toggleMenu}>
                                     <picture>
-                                        <img src="/images/header_logo.svg" alt="React LOGO" width="45px"/>
+                                        <img
+                                            src="/images/header_logo.svg"
+                                            alt="React LOGO"
+                                            width="45px"
+                                        />
                                     </picture>
                                     <h2>JavaScript React</h2>
                                 </a>
@@ -75,7 +76,12 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <a target="_blank" href="https://github.com/MiguelHG2351/curso-avanzado-javascript">GITHUB</a>
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/MiguelHG2351/curso-avanzado-javascript"
+                                >
+                                    GITHUB
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -88,7 +94,11 @@ export default function Header() {
                         <i className="material-icons">search</i>
                     </button>
                 </div>
-                <div className="overlay" ref={overlayRef} onClick={toggleMenu}></div>
+                <div
+                    className="overlay"
+                    ref={overlayRef}
+                    onClick={toggleMenu}
+                ></div>
             </header>
             <style jsx>{styles}</style>
         </>

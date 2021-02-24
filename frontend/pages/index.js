@@ -20,7 +20,7 @@ export default function Home() {
                                 />
                             </div>
                             <div className="theme-intro">
-                                <h3>Bienvenido :)</h3>
+                                <h3>Bienvenido a este proyecto sobre desarrollo Web :)</h3>
                                 <p>
                                     Esta página web contiene una documentación
                                     enfoncada principalmente sobre desarrollo

@@ -42,7 +42,7 @@ function MyApp(props) {
             <Layout>
                 <Header />
                 <div className={router.route !== "/" ? "main" : null}>
-                    {router.route !== "/" && <Menu />}
+                    {router.route.includes("/docs") && <Menu />}
                     <AnimatePresence exitBeforeEnter initial={false}>
                         <Component {...pageProps} key={router.route} />
                     </AnimatePresence>

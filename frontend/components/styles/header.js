@@ -10,6 +10,9 @@ export default css`
         display: flex;
         align-items: center;
         height: 63.75px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
     }
 
     /* Mobiles styles | Header | title */
@@ -108,6 +111,7 @@ export default css`
         margin: 0;
         width: 75%;
         background-color: #333;
+        height: 100%;
         height: -webkit-fill-available;
         padding: 12px;
     }
@@ -152,6 +156,8 @@ export default css`
         padding: 8px;
         color: #eee;
         display: inline-block;
+        /* support for Firefox */
+        width: 100%;
         width: -webkit-fill-available;
     }
 
@@ -233,6 +239,7 @@ export default css`
         /* Desktop styles | Header | sidenav | container */
         .sidenav .container {
             background-color: transparent;
+            width: 100%;
             width: -webkit-fill-available;
         }
 

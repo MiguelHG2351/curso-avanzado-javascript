@@ -16,7 +16,7 @@ export default css`
 }
 
 .theme-summary > *, .some-theme > *, .theme > * {
-    font-family: "Be Vietnam";
+    font-family: var(--font-secondary);
 }
 
 .some-theme li {

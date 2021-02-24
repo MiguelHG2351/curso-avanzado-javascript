@@ -85,16 +85,6 @@ export default css`
             display: none;
         }
         
-        /* Desktop styles | floating menu */
-        .floating-menu {
-            display: block;
-            position: sticky;
-            top: 0px;
-            background-color: #0c1633;
-            color: #fff;
-            border-right: 1px solid gray;
-        }
-
         .container-floating-menu {
             position: sticky;
             top: 0;
@@ -105,6 +95,17 @@ export default css`
         /* Desktop styles | floating Menu | Header | close */
         .close {
             display: none;
+        }
+    }
+
+    @media screen and (min-width: 1190px) {
+        .floating-menu {
+            display: block;
+            position: sticky;
+            top: 0px;
+            background-color: #0c1633;
+            color: #fff;
+            border-right: 1px solid gray;
         }
     }
 

@@ -29,7 +29,8 @@ export default function Menu() {
             <section className="floating-menu" ref={ref}>
                 <div className="container-floating-menu">
                     <header className="header-floating-menu">
-                        <h2>Temario</h2>
+                        {/* <h2>Temario</h2> */}
+                        <h2>Temas</h2>
                         <button
                             className="btn close"
                             id="close"
@@ -42,70 +43,70 @@ export default function Menu() {
                         <ul className="list-class-course">
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/history"
+                                    to="/docs/history"
                                     currentRoute={currentRoute}
                                     text="Historia de JavaScript y la necesidad de la interacitividad en el navegador"
                                 />
                             </li>
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/terminal"
+                                    to="/docs/terminal"
                                     currentRoute={currentRoute}
                                     text="Introducción a la terminal y línea de comandos"
                                 />
                             </li>
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/html"
+                                    to="/docs/html"
                                     currentRoute={currentRoute}
                                     text="HTML"
                                 />
                             </li>
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/layout-html"
+                                    to="/docs/html/layout-html"
                                     currentRoute={currentRoute}
                                     text="Importancia de la maquetación en HTML"
                                 />
                             </li>
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/esencial-html"
+                                    to="/docs/html/esencial-html"
                                     currentRoute={currentRoute}
                                     text="Etiquetas esenciales"
                                 />
                             </li>
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/tags"
+                                    to="/docs/html/tags"
                                     currentRoute={currentRoute}
                                     text="Etiquetas definitivas"
                                 />
                             </li>
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/accessibility-user"
+                                    to="/docs/html/accessibility-user"
                                     currentRoute={currentRoute}
                                     text="Accesibilidad al usuario"
                                 />
                             </li>
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/attribute"
+                                    to="/docs/html/attribute"
                                     currentRoute={currentRoute}
                                     text="Atributos"
                                 />
                             </li>
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/better-experience-acessibility"
+                                    to="/docs/html/better-experience-acessibility"
                                     currentRoute={currentRoute}
                                     text="Mejorando la accesibilidad con atributos"
                                 />
                             </li>
                             <li className="list-class" onClick={toggleMenu}>
                                 <OldRoute
-                                    to="/container-html"
+                                    to="/docs/html/container-html"
                                     currentRoute={currentRoute}
                                     text="Importancia de usar contenedores
                                 &lt;div&gt;&lt;/div&gt; en HTML para diseño

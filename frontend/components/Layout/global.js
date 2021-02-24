@@ -1,173 +1,246 @@
 import css from "styled-jsx/css";
 
 const styles = css.global`
-    /* vietnamese */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    :root {
+        --font-primary: "Rubik", sans-serif;
+        --font-secondary: "Montserrat", sans-serif;
+    }
+
+    /* Rubik Font */
+
+    /* cyrillic-ext */
     @font-face {
-        font-family: "Be Vietnam";
+        font-family: "Rubik";
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/bevietnam/v2/FBVzdDflz-iPfoPuIC2iIqkn6H9k.woff2)
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWkU1Z4Y.woff2)
             format("woff2");
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-            U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+            U+A640-A69F, U+FE2E-FE2F;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFU0U1Z4Y.woff2)
+            format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+    /* hebrew */
+    @font-face {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFVUU1Z4Y.woff2)
+            format("woff2");
+        unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
     }
     /* latin-ext */
     @font-face {
-        font-family: "Be Vietnam";
+        font-family: "Rubik";
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/bevietnam/v2/FBVzdDflz-iPfoPuIC2iIqgn6H9k.woff2)
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUU1Z4Y.woff2)
             format("woff2");
         unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
             U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
     /* latin */
     @font-face {
-        font-family: "Be Vietnam";
+        font-family: "Rubik";
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(https://fonts.gstatic.com/s/bevietnam/v2/FBVzdDflz-iPfoPuIC2iIqYn6A.woff2)
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0U1.woff2)
+            format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FWkU1Z4Y.woff2)
+            format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+            U+A640-A69F, U+FE2E-FE2F;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FU0U1Z4Y.woff2)
+            format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+    /* hebrew */
+    @font-face {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FVUU1Z4Y.woff2)
+            format("woff2");
+        unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FWUU1Z4Y.woff2)
+            format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts/Rubik/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FV0U1.woff2)
             format("woff2");
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
             U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
             U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
-    /* cyrillic-ext */
+    /* vietnamese */
     @font-face {
-        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-family: "Rubik";
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format("woff2");
+        src: url(/fonts/Rubik/FBVzdDflz-iPfoPuIC2iIqkn6H9k.woff2)
+            format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+            U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* Montserrat Font */
+
+    /* cyrillic-ext */
+    @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2)
+            format("woff2");
         unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
             U+A640-A69F, U+FE2E-FE2F;
     }
     /* cyrillic */
     @font-face {
-        font-family: "Roboto";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format("woff2");
+        src: url(/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2)
+            format("woff2");
         unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-    /* greek-ext */
-    @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(/fonts/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format("woff2");
-        unicode-range: U+1F00-1FFF;
-    }
-    /* greek */
-    @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(/fonts/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format("woff2");
-        unicode-range: U+0370-03FF;
     }
     /* vietnamese */
     @font-face {
-        font-family: "Roboto";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(/fonts/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format("woff2");
+        src: url(/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2)
+            format("woff2");
         unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
             U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
     }
     /* latin-ext */
     @font-face {
-        font-family: "Roboto";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format("woff2");
+        src: url(/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2)
+            format("woff2");
         unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
             U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
     /* latin */
     @font-face {
-        font-family: "Roboto";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
+        src: url(/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2)
+            format("woff2");
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
             U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
             U+2212, U+2215, U+FEFF, U+FFFD;
     }
     /* cyrillic-ext */
     @font-face {
-        font-family: "Roboto";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url(/fonts/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format("woff2");
+        src: url(/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gTD_u50.woff2)
+            format("woff2");
         unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
             U+A640-A69F, U+FE2E-FE2F;
     }
     /* cyrillic */
     @font-face {
-        font-family: "Roboto";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url(/fonts/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format("woff2");
+        src: url(/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3g3D_u50.woff2)
+            format("woff2");
         unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-    /* greek-ext */
-    @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(/fonts/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format("woff2");
-        unicode-range: U+1F00-1FFF;
-    }
-    /* greek */
-    @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(/fonts/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format("woff2");
-        unicode-range: U+0370-03FF;
     }
     /* vietnamese */
     @font-face {
-        font-family: "Roboto";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url(/fonts/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format("woff2");
+        src: url(/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gbD_u50.woff2)
+            format("woff2");
         unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
             U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
     }
     /* latin-ext */
     @font-face {
-        font-family: "Roboto";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url(/fonts/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format("woff2");
+        src: url(/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gfD_u50.woff2)
+            format("woff2");
         unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
             U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
     /* latin */
     @font-face {
-        font-family: "Roboto";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url(/fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");
+        src: url(/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2)
+            format("woff2");
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
             U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
             U+2212, U+2215, U+FEFF, U+FFFD;
@@ -214,7 +287,7 @@ const styles = css.global`
     h2,
     a,
     li {
-        font-family: "Roboto";
+        font-family: var(--font-primary);
     }
 
     .xd {
@@ -253,11 +326,6 @@ const styles = css.global`
         font-size: 2.2rem;
     }
 
-    .main {
-        display: grid;
-        grid-template-columns: 30% 70%;
-    }
-
     .content {
         color: #eee;
         width: 90%;
@@ -274,10 +342,10 @@ const styles = css.global`
         .main {
             max-width: 1190px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: 30% 70%;
         }
-
     }
-
 `;
 
 export default styles;

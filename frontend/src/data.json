@@ -1,0 +1,106 @@
+[
+    {
+        "title": "Historia de JavaScript y la necesidad de la interacitividad en el navegador"
+    },
+    {
+        "title": "Introducción a la terminal y línea de comandos",
+        "info": [
+            {
+                "title": "Introducción a la terminal y línea de comandos"
+            },
+            {
+                "title": "Comandos para trabajar desde nuestra ubicación"
+            },
+            {
+                "title": "Comandos para cambiar la ubicación"
+            },
+            {
+                "title": "Analizando la ubicación"
+            }
+        ]
+    },
+    {
+        "title": "HTML",
+        "info": [
+            {
+                "title": "Que es HTML y que no es HTML?"
+            },
+            {
+                "title": "Que es Maquetación"
+            },
+            {
+                "title": "Etiquetas HTML"
+            }
+        ]
+    },
+    {
+        "title": "Importancia de la maquetación en HTML",
+        "info": [
+            {
+                "title": "Estructuras básicas"
+            },
+            {
+                "title": "Código Limpio"
+            },
+            {
+                "title": "Entendiendo HTML como"
+            }
+        ]
+    },
+    {
+        "title": "Etiquetas esenciales",
+        "info": [
+            {
+                "title": "Tipos de etiquetas"
+            },
+            {
+                "title": "Estructura mobile first"
+            },
+            {
+                "title": "reto"
+            }
+        ]
+    },
+    {
+        "title": "Etiquetas definitivas",
+        "info": [
+            {
+                "title": "Aplicando los conceptos anteriores"
+            },
+            {
+                "title": "Solucionando errores dentro del código"
+            },
+            {
+                "title": "Escalabilidad"
+            }
+        ]
+    },
+    {
+        "title": "Accesibilidad al usuario",
+        "info": [
+            {
+                "title": "Entendieno el funcionamiento de las etiquetas aria-*"
+            },
+            {
+                "title": "Accesibilidad usando la herramienta ANDI"
+            },
+            {
+                "title": "Verificano la accesibilidad con las devtools de Chrome y Firefox"
+            }
+        ]
+    },
+    {
+        "title": "Atributos",
+        "info": [
+            {
+                "title": "Disponibilidad de atributos"
+            },
+            {
+                "title": "Tipos de datos en HTML"
+            },
+            {
+                "title": "Uso de devtools con los atributos"
+            }
+        ]
+    }
+]
