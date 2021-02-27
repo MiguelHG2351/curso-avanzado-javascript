@@ -9,7 +9,11 @@ export default function Footer() {
                 <div className="footer-description">
                     <div className="principal-info">
                         <div className="owner">
-                            <h3>MiguelHG2351</h3>
+                            <h3>
+                                <a href="https://miguel2351.vercel.app/" target="_blank">
+                                    MiguelHG2351
+                                </a>
+                            </h3>
                         </div>
                         <div className="social">
                             <a href="https://www.facebook.com/miguelHG2351">

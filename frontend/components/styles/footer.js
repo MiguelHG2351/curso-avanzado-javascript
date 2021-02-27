@@ -12,6 +12,18 @@ export default css`
         justify-content: space-around;
     }
 
+    .owner h3 a {
+        color: #fff;
+    }
+
+    .owner h3 a:hover {
+        text-decoration: underline;
+        text-decoration-color: #09f;
+        /* text-decoration-style: dashed;
+        text-decoration-style: dashed; */
+        text-decoration-thickness: 3px;
+    }
+
     .owner h3, .title-reference h3, .title-menu-footer h3 {
         text-align: center;
     }

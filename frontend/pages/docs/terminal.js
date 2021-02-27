@@ -327,7 +327,7 @@ export default function Terminal() {
                         <li></li>
                         <li></li>
                         <li></li>
-                        <li></li>
+                        <li></li>   
                         <li></li>
                         <li></li>
                         <li></li>
