@@ -38,6 +38,7 @@ function MyApp(props) {
                     type="text/css"
                     href="https://unpkg.com/nprogress@0.2.0/nprogress.css"
                 />
+                <link rel="manifest" href="/manifest.json" />
             </Head>
             <Layout>
                 <Header />
