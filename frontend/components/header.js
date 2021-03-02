@@ -62,7 +62,7 @@ export default function Header() {
                             </li>
                             <li onClick={toggleMenu}>
                                 <Link href="/API">
-                                    <a>API</a>
+                                    <a>Videos</a>
                                 </Link>
                             </li>
                             <li onClick={toggleMenu}>

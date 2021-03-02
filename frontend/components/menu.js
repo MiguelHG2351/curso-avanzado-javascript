@@ -29,8 +29,12 @@ export default function Menu() {
             <section className="floating-menu" ref={ref}>
                 <div className="container-floating-menu">
                     <header className="header-floating-menu">
-                        {/* <h2>Temario</h2> */}
-                        <h2>Temas</h2>
+                        <button className="btn backward">
+                            <i className="fas fa-arrow-left"></i>
+                            <span>
+                                Temario actual
+                            </span>
+                        </button>
                         <button
                             className="btn close"
                             id="close"

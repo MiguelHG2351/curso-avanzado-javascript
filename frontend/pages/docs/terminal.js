@@ -150,6 +150,7 @@ export default function Terminal() {
                             <a
                                 href="https://docs.microsoft.com/en-us/windows/wsl/install-win10"
                                 rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 wsl
                             </a>{" "}

@@ -337,16 +337,18 @@ const styles = css.global`
         margin: 15px auto;
     }
 
-
-    @media screen and (min-width: 1260px) {
-        .content {
-            width: 1260px;
-        }
+    @media screen and (min-width: 1190px) {
         .main {
             max-width: 1190px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 30% 70%;
+        }
+    }
+
+    @media screen and (min-width: 1260px) {
+        .content {
+            width: 1260px;
         }
     }
 `;

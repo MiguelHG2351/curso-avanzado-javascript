@@ -25,11 +25,25 @@ export default css`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.54);
     }
 
-    /* Mobiles styles | floating Menu | Header | h2 */
-    .header-floating-menu h2 {
+    /* Mobiles styles | floating Menu | Header | button */
+    .backward {
         cursor: pointer;
+        width: 100%;
+        text-align: left;
+        font-size: 22px;
+        padding: 18px;
+    }
+
+    .backward span {
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    .backward i {
+        vertical-align: middle;
     }
 
     /* Mobiles styles | floating Menu | Header | close */
@@ -81,10 +95,6 @@ export default css`
 
     @media screen and (min-width: 1020px) {
         /* Desktop styles | floating button */
-        .floating-button {
-            display: none;
-        }
-        
         .container-floating-menu {
             position: sticky;
             top: 0;
@@ -99,6 +109,12 @@ export default css`
     }
 
     @media screen and (min-width: 1190px) {
+        /* Desktop styles | floating button */
+        .floating-button {
+            display: none;
+        }
+        
+        /* Desktop styles | floating menu */
         .floating-menu {
             display: block;
             position: sticky;
