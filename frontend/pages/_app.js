@@ -1,7 +1,14 @@
+import { Fragment } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { AnimatePresence } from "framer-motion";
+import {
+    motion,
+    AnimatePresence,
+    useTransform,
+    useViewportScroll,
+} from "framer-motion";
 import Router, { useRouter } from "next/router";
+import css from "styled-jsx/css";
 import NProgress from "nprogress";
 
 //Components
@@ -21,6 +28,12 @@ function MyApp(props) {
     const { Component, pageProps } = props;
     const router = useRouter();
 
+    const { scrollYProgress } = useViewportScroll();
+    const widthElement = useTransform(
+        scrollYProgress,
+        (value) => `${value * 100}%`
+    );
+
     return (
         <>
             <Head>
@@ -36,14 +49,27 @@ function MyApp(props) {
                 <link
                     rel="stylesheet"
                     type="text/css"
-                    href="https://unpkg.com/nprogress@0.2.0/nprogress.css"
+                    href="/css/nprogress.css"
                 />
                 <link rel="manifest" href="/manifest.json" />
             </Head>
             <Layout>
                 <Header />
                 <div className={router.route !== "/" ? "main" : null}>
-                    {router.route.includes("/docs") && <Menu />}
+                    {router.route.includes("/docs") && (
+                        <Fragment>
+                            <Menu />
+                            <div className="progress-icon">
+                                <motion.div
+                                    style={{
+                                        width: widthElement,
+                                        height: "5px",
+                                        backgroundColor: "#09f",
+                                    }}
+                                ></motion.div>
+                            </div>
+                        </Fragment>
+                    )}
                     <AnimatePresence exitBeforeEnter initial={false}>
                         <Component {...pageProps} key={router.route} />
                     </AnimatePresence>

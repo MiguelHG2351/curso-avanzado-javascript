@@ -17,7 +17,7 @@ class MyDocument extends Document {
                     <Main />
                     <div id="modal"></div>
                     <NextScript />
-                    <script src="https://kit.fontawesome.com/cd830bd1aa.js" crossorigin="anonymous"></script>
+                    <script src="https://kit.fontawesome.com/cd830bd1aa.js" crossOrigin="anonymous"></script>
                 </body>
             </Html>
         );

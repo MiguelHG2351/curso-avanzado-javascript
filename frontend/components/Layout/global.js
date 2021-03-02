@@ -337,6 +337,24 @@ const styles = css.global`
         margin: 15px auto;
     }
 
+    /* temporal */
+    .progress-icon {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            right: 0;
+            height: 120px;
+            width: 90%;
+            margin: 0 auto;
+            z-index: 11;
+            pointer-events: none;
+        }
+
+    .temp div {
+        height: 3px;
+        background-color: #09f;
+    }
+
     @media screen and (min-width: 1190px) {
         .main {
             max-width: 1190px;

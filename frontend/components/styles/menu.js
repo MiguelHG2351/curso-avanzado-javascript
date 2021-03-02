@@ -30,6 +30,7 @@ export default css`
 
     /* Mobiles styles | floating Menu | Header | button */
     .backward {
+        color: #000;
         cursor: pointer;
         width: 100%;
         text-align: left;
@@ -97,7 +98,7 @@ export default css`
         /* Desktop styles | floating button */
         .container-floating-menu {
             position: sticky;
-            top: 0;
+            top: 80px;
             bottom: 0;
             overflow-y: auto;
         }
@@ -109,18 +110,28 @@ export default css`
     }
 
     @media screen and (min-width: 1190px) {
+        /* Mobiles styles | floating Menu | Header | button */
+        .backward {
+            color: #fff
+        }
+
         /* Desktop styles | floating button */
         .floating-button {
             display: none;
         }
+
+        
         
         /* Desktop styles | floating menu */
         .floating-menu {
             display: block;
-            position: sticky;
-            top: 0px;
-            background-color: var(--secondary-background);
+            position: static;
+            background-color: transparent;
             color: #fff;
+        }
+        
+        /* Desktop styles | floating menu | container */
+        .container-floating-menu {
             border-right: 1px solid gray;
         }
     }

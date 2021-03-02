@@ -3,16 +3,19 @@ import css from "styled-jsx/css";
 export default css`
     /* Mobiles styles */
 
-    /* Mobiles styles | Header */
     .header-site {
         background-color: #20232a;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /* Mobiles styles | Header | container */
+    .header-container {
         padding: 8px;
         display: flex;
         align-items: center;
         height: 63.75px;
-        position: sticky;
-        top: 0;
-        z-index: 10;
     }
 
     /* Mobiles styles | Header | title */
@@ -267,8 +270,8 @@ export default css`
     }
 
     @media screen and (min-width: 1260px) {
-        /* Desktop styles | Header */
-        .header-site {
+        /* Desktop styles | Header | container */
+        .header-container {
             width: 1260px;
             margin: 0 auto;
         }
