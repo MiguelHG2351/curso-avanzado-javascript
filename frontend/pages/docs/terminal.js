@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import styles from "styles/terminal";
 import Image from "next/image";
 

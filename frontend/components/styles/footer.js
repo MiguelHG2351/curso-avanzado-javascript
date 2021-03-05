@@ -114,4 +114,12 @@ export default css`
         }
 
     }
+
+    @media screen and (min-width: 1260px) {
+        /* Desktop styles | Header | container */
+        .footer-container {
+            width: 1260px;
+            margin: 0 auto;
+        }
+    }
 `

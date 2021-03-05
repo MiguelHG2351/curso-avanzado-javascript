@@ -3,7 +3,7 @@ import css from 'styled-jsx/css'
 const styles = css`
     .scroll-top {
         position: fixed;
-        bottom: 100px;
+        bottom: 50px;
         right: var(--spacing);
         /* left: unset; */
         background-color: rgba(17, 153, 219, 0.84);

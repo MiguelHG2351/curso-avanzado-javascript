@@ -8,7 +8,6 @@ import {
     useViewportScroll,
 } from "framer-motion";
 import Router, { useRouter } from "next/router";
-import css from "styled-jsx/css";
 import NProgress from "nprogress";
 
 //Components

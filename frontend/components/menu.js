@@ -30,9 +30,9 @@ export default function Menu() {
                 <div className="container-floating-menu">
                     <header className="header-floating-menu">
                         <button className="btn backward">
-                            <i className="fas fa-arrow-left"></i>
+                            <i className="fas fa-arrow-left" aria-hidden="true"></i>
                             <span>
-                                Temario actual
+                                HTML
                             </span>
                         </button>
                         <button
